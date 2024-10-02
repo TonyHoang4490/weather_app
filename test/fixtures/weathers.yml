@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  time: 2024-09-30 19:15:37
+  temp: 1.5
+  temp_high: 1.5
+  temp_low: 1.5
+  weather_desc: MyString
+  weather_OWM_icon_code: MyString
+  wind: 1.5
+  humidity: 1
+
+two:
+  time: 2024-09-30 19:15:37
+  temp: 1.5
+  temp_high: 1.5
+  temp_low: 1.5
+  weather_desc: MyString
+  weather_OWM_icon_code: MyString
+  wind: 1.5
+  humidity: 1
