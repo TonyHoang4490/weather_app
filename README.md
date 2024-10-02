@@ -14,7 +14,7 @@ Instructions:
   $ source ~/.bash_profile
 
 1.5) Install rvm
-   - Google for instruction on how to rvm on your Mac.
+   - Google for instruction on how to install rvm on your Mac.
 
 2) Install ruby 3.3
   $ rvm install 3.3.3 --with-openssl-dir=$(brew --prefix openssl@3)
