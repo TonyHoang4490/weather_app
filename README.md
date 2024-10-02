@@ -13,6 +13,9 @@ Instructions:
   $ echo 'export PATH="/usr/local/opt/openssl/bin:$PATH"' >> ~/.bash_profile
   $ source ~/.bash_profile
 
+1.5) Install rvm
+   - Google for instruction on how to rvm on your Mac.
+
 2) Install ruby 3.3
   $ rvm install 3.3.3 --with-openssl-dir=$(brew --prefix openssl@3)
   $ echo 'export PATH="<path_to_your_ruby_bin_dir>:$PATH"' >> ~/.bash_profile   # you can run 'which ruby' to find the path
