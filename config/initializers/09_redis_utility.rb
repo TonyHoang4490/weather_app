@@ -1,0 +1,1 @@
+# RedisUtility.redis_config = {:host=>"127.0.0.1", :timeout=>60, :db=>1, :password=>nil}
