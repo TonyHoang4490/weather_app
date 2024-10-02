@@ -1,0 +1,3 @@
+<% content_for :title, "weather" %>
+
+<%= render "form", address: @address, locals: {controller: 'weathers', action: 'create'} %>

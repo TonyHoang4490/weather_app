@@ -1,0 +1,44 @@
+<p style="color: green"><%= notice %></p>
+<% content_for :title, "Weathers" %>
+<head>
+</head>
+<body>
+	<div>
+    <h1>Weathers <%= @notice %> </h1>
+    <%= link_to "New weather", new_weather_path %>
+    <br/><br/>
+  </div>
+  <div>
+    <table id="weatherTable">
+    	  <tr>
+    	  	<h2><%= @address_str %></h2>
+    	  </tr>
+        <thead>
+            <tr>
+                <th>Time (PST)</th>
+                <th>Temp (F)</th>
+                <th>Temp High (F)</th>
+                <th>Temp Low (F)</th>
+                <th>Wind (M/H)</th>
+                <th>Humidity (%)</th>
+                <th>Weather</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <% @weathers.each do |weather| %>
+                <tr>
+                	  <td> <%= weather.time.in_time_zone("Pacific Time (US & Canada)").strftime("%A %b %e, %Y at %l:%M %p") %> </td>
+                	  <td> <%= weather.temp %> </td>
+                	  <td> <%= weather.temp_high %> </td>
+                	  <td> <%= weather.temp_low %> </td>
+                	  <td> <%= weather.humidity %> </td>
+                	  <td> <%= weather.wind %> </td>
+                	  <td> <%= weather.weather_desc %> </td>
+                	  <td> <img src=<%= "http://openweathermap.org/img/w/#{weather.weather_OWM_icon_code}.png" %> > </td>
+                </tr>
+            <% end %>
+        </tbody>
+    </table>
+  </div>
+</body>

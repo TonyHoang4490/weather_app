@@ -1,0 +1,29 @@
+<%= form_with(model: address) do |form| %>
+  <div>
+    <%= form.label :street %>
+    <%= form.text_field :street %>
+  </div>
+  </br>
+
+  <div>
+    <%= form.label :city %>
+    <%= form.text_field :city %>
+  </div>
+  </br>
+
+  <div>
+    <%= form.label :state %>
+    <%= form.text_field :state %>
+  </div>
+  </br>
+
+  <div>
+    <%= form.label :zip_code %>
+    <%= form.text_field :zip_code %>
+  </div>
+  </br>
+
+  <div>
+    <h2> <%= form.submit "Gather Weather Info" %> </h2>
+  </div>
+<% end %>
